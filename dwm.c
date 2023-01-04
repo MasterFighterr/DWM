@@ -505,7 +505,7 @@ checkotherwm(void)
 	XSync(dpy, False);
 }
 
-void + (n > 1 ? gappx : 0)
+void
 cleanup(void)
 {
 	Arg a = {.ui = ~0};
