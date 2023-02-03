@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", black, "-nf", white, "-sb", white, "-sf", black, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", black, "-nf", red, "-sb", red, "-sf", black, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *librewolf[] = { "librewolf", NULL };
 static const char *icecat[] = { "icecat", NULL};
