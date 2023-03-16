@@ -73,6 +73,7 @@ static const char *steamcmd[] = { "steam", NULL };
 static const char *filemancmd[] = { "pcmanfm", NULL };
 static const char *tutanota[] = { "tutanota-desktop", NULL };
 static const char *strawberry[] = { "strawberry", NULL };
+static const char *pulsemixer[] = { "alacritty", "-e", "pulsemixer", NULL };
 //volume controls
 
 //This is for no pulseaudio support
@@ -111,6 +112,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,	   spawn,	   {.v = filemancmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = tutanota } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = strawberry } },
+    { MODKEY,                   XK_equal,      spawn,          {.v = pulsemixer } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
