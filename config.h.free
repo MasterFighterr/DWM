@@ -69,7 +69,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *librewolf[] = { "librewolf", NULL };
 static const char *icecat[] = { "icecat", NULL};
 static const char *firefox[] = { "firefox", NULL };
-static const char *steamcmd[] = { "steam", NULL };
+static const char *steamcmd[] = { "steam", "-forcedesktopscaling", "2", NULL };
 static const char *filemancmd[] = { "pcmanfm", NULL };
 static const char *tutanota[] = { "tutanota-desktop", NULL };
 static const char *strawberry[] = { "strawberry", NULL };
@@ -128,6 +128,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,             XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,         XK_backslash,  togglefloating, {0} },
+    { MODKEY|ShiftMask,     XK_backslash,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
